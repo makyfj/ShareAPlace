@@ -27,7 +27,10 @@ const searchAddressHandler = (e: Event) => {
       )}&key=${GOOGLE_API_KEY}`
     )
     .then((response) => {
-      console.log(response);
+      if (response.data.status !== "OK") {
+        throw new Error("Could fetch location");
+      }
+      const coordinates = response.data.results[0].geometry.location;
     })
     .catch((err) => {
       console.log(err);
