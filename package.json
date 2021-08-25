@@ -20,5 +20,9 @@
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@types/dotenv": "^8.2.0",
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0"
+  }
 }
