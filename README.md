@@ -1,4 +1,5 @@
 # ShareAPlace
 
-first: npm i 
-then: npm start
+- first: npm i 
+- then: npm start
+- localhost:8080
